@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Uso de tablas</h1>
+    <table border=" 1">
+      <thead>
+        <tr>
+          <th>Matrícula</th>
+          <th colspan="2">Nombre completo</th>
+          <th>Calificación</th>
+        </tr>
+        <!--Aquí termina el encabezado-->
+      </thead>
+      <tbody>
+        <tr>
+          <td>12345</td>
+          <td>Benja</td>
+          <td>Barona</td>
+          <td>9.8</td>
+        </tr>
+        <tr>
+          <td>128945</td>
+          <td>Luis</td>
+          <td>Camargo</td>
+          <td>8.9</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <h1>Formularios</h1>
+    <form method="post" action="index.html">
+    <lable for="nombre">Nombre completo:</label>
+        <input type="text" name="texto1" placeholder="Ingrese el nombre" id="nombre"/>
+    <lable for="nombre">Fecha de nacimiento</label>
+        <input type="date" name="texto1" placeholder="dd/mm/aa" id="nombre"/>
+    <button type="submit">Registrar</button>
+    <br/>
+    <lable for="nombre">Carrera</label>
+        <select>
+            <option>Ingenería en TI y Negocios Digitales</option>
+            <option selected>Ingenería Industrial</option>
+            <option >Arquitectura</option>
+        </select>
+        <input type="checkbox" name="termino"/>Acepto las políticas de privacidad
+        <button type="submit"> Registrar </button>
+    </form>
+  </body>
+</html>
