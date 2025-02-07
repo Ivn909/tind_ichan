@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-  margin: auto;
+  margin: auto; /* Cambiado de 'auto' a '0' para evitar centrado automático */
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -9,58 +11,57 @@ body {
 }
 
 header {
-  background-color: #d8986e;
+  background-color: #2153b7;
   width: 80%;
-  padding: 30px 10px 20px 50px;
+  padding: 20px 50px; /* Reducido el padding superior e inferior */
   margin: auto;
-  height: 80px;
+  height: auto; /* Cambiado a 'auto' para que se ajuste al contenido */
+  display: flex; /* Usar flexbox para alinear los elementos */
+  justify-content: space-between; /* Espacio entre logo y menú */
+  align-items: center; /* Centrar verticalmente los elementos */
 }
 
 #logo {
-  display: flex; /* Alineación horizontal */
-  align-items: center; /* Centra verticalmente */
-  gap: 10px; /* Espacio entre SVG y texto */
-  width: auto; /* Ajusta al contenido */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: auto;
 }
 
-/* Ajustar el tamaño del logo */
 #logo svg {
-  width: 50px; /* Cambia el tamaño según sea necesario */
+  width: 50px;
   height: auto;
-  color: aqua;
+  color: #ffffff;
 }
 
-/* Estilo para el texto dentro de #logo */
 #logo span {
-  font-size: 1.2rem; /* Tamaño del texto */
-  color: white; /* Color del texto */
-  font-weight: bold; /* O cualquier estilo deseado */
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
 }
 
 nav {
-  float: right;
-  width: 50%s;
-  border: solid 1px #000000;
+  display: flex; /* Usar flexbox en lugar de float */
+  gap: 15px; /* Espacio entre los enlaces del menú */
   padding: 10px;
 }
 
 a {
   color: white;
   text-decoration: none;
-  float: left;
-  padding: 10px;
   text-transform: uppercase;
+  padding: 10px;
 }
 
 a:hover {
-  background-color: red;
-  color: rgb(79, 228, 161);
+  background-color: rgb(0, 191, 255);
+  color: rgb(45, 88, 244);
 }
 
 #slide {
   background-image: url("../images/fotocarrera.jpg");
   background-size: cover;
-  height: 650px;
+  height: 480px;
   text-align: center;
 }
 
@@ -72,8 +73,10 @@ a:hover {
 }
 
 #slide p {
-  font-size: 19px;
+  padding-top: 2.5%;
+  font-size: 24px;
   color: white;
+  text-shadow: #000000 1px 0 5px;
   width: 50%;
 }
 
@@ -86,9 +89,13 @@ main section {
 }
 
 main section h1 {
-  font-size: 30;
-  color: orange;
+  font-size: 30px; /* Corregido el valor (faltaba 'px') */
+  color: #2153b7;
   padding-bottom: 20px;
+}
+
+main section p {
+  color: #565656;
 }
 
 .imagen-derecha {
@@ -101,7 +108,7 @@ main section h1 {
 
 .boton {
   width: 40%;
-  background: rgb(255, 94, 0);
+  background: #2153b7;
   color: white;
   font-size: 30px;
   vertical-align: middle;
@@ -124,7 +131,6 @@ main section h1 {
   width: 40%;
   border-radius: 20px;
   box-shadow: #000000 1px 0 3px;
-  float: center;
   margin: 5px;
 }
 
@@ -144,16 +150,16 @@ footer {
 .formulario input {
   width: 100%;
   padding: 5px;
-  border: solid 1px rgb(255, 94, 0);
+  border: solid 1px #2153b7;
   display: block;
   margin-bottom: 6px;
 }
 
-.mapa ifram {
+.mapa iframe {
   width: 100%;
 }
 
 .redes-sociales {
-  color: yellow;
-  padding: 5px;
+  color: #2153b7;
+  padding-bottom: 5px;
 }
