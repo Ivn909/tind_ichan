@@ -1,0 +1,13 @@
+.btn-warning{
+    background-color: aqua;
+    border:1px aqua solid
+}
+
+.btn-pink{
+    background-color: blueviolet;
+}
+
+.btn-pink:hover{
+    color: blueviolet;
+    border: solid 1px rgb(201, 177, 223);
+}
